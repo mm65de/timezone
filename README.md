@@ -19,3 +19,9 @@ Some of your data should consider a timezone, others must not.
 
 ### Problems
 If you store your _date of birth_  by an instance of `java.util.Date`, you could get in trouble: A `java.util.Date` internally always stores the count of milliseconds since `1970-01-01 00:00:00 UTC`. The first problem is, that your date of birth does not specify hours, minutes and seconds, but `java.util.Date` does. The second problem is, that if you are currently located in NYC, you have to specify 7 p.m. *of the eve* of your date of birth to get midnight of the in UTC.
+
+## Java means
+
+## Database means
+### PostgreSQL
+### Oracle
