@@ -25,6 +25,9 @@ Instances of type `java.util.Date` always store the milliseconds since `1970-01-
 
 ## Database means
 ### PostgreSQL
+#### Documentation
+* [Date/Time Types](https://www.postgresql.org/docs/8.1/datatype-datetime.html)
+* [Date/Time Functions and Operators](https://www.postgresql.org/docs/15/functions-datetime.html)
 ### Oracle
 #### Documentation
 * [Datetime Data Types and Time Zone Support](https://docs.oracle.com/en/database/oracle/oracle-database/21/nlspg/datetime-data-types-and-time-zone-support.html#GUID-7A1BA319-767A-43CC-A579-4DAC7063B243)
