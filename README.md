@@ -31,3 +31,4 @@ Instances of type `java.util.Date` always store the milliseconds since `1970-01-
 * [DBTIMEZONE](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/DBTIMEZONE.html)
 * [Convert Timestamp into Milliseconds](https://stackoverflow.com/questions/64359143/convert-timestamp-into-milliseconds)
 * [TO_TIMESTAMP](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/TO_TIMESTAMP.html)
+* [Oracle Built-in Data Types](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Data-Types.html#GUID-7B72E154-677A-4342-A1EA-C74C1EA928E6)
