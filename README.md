@@ -24,6 +24,8 @@ If you store your _date of birth_  by an instance of `java.util.Date`, you could
 ## Java means
 Instances of type `java.util.Date` always store the milliseconds since `1970-01-01 00:00:00 +00:00` that means GMT or UTC: Please see the description of [java.util.Date](https://docs.oracle.com/javase/8/docs/api/java/util/Date.html). JDBC provides the three types [java.sql.Date](https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/java/sql/Date.html), [java.sql.Time](https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/java/sql/Time.html) and [java.sql.Timestamp](https://docs.oracle.com/en/java/javase/21/docs/api/java.sql/java/sql/Timestamp.html). Constructors of these types, that specify values for year, month, day, hour, minute, second, etc. are deprecated since Java 1.2. The proper way to construct these values is specifying a long value representing the milliseconds since [Epoch](https://en.wikipedia.org/wiki/Unix_time#Definition), i.e. January 1, 1970 00:00:00 GMT.
 
+Java 1.8 introduced the package [java.time](https://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html) that provides a set of classes that is better suited to represent dates and times.
+
 ## Database means
 ### Standard SQL
 According to this [Wikipedia section](https://en.wikipedia.org/wiki/SQL#Predefined_data_types) the SQL Standard provides the predefined data types DATE, TIME and TIMESTAMP.
