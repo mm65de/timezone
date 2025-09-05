@@ -1,6 +1,7 @@
 package de.mm65.github.timezone;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -108,6 +109,28 @@ class VeryBasicTest {
         LOGGER.info("Deltas have been: {}, {}, {}, {}",
                 millis2 - millis1, millis3 - millis2, millis4 - millis3, millis5 - millis4);
         LOGGER.info("");
+    }
+
+    @Test
+    void testCreateDateWithUTCtimeAsLocalTime() {
+        LOGGER.info("testCreateDateWithUTCtimeAsLocalTime():");
+        LOGGER.info("---------------------------------------");
+
+        final TimeZone tz = TimeZone.getDefault();
+        assertNotEquals("Coordinated Universal Time", tz.getDisplayName());
+        
+        LOGGER.info("Current default TimeZone (tz): {}", tz.getDisplayName());
+        LOGGER.info("               tz.getOffset(): {}", tz.getOffset(new Date().getTime()));
+        LOGGER.info("            tz.getRawOffset(): {}", tz.getRawOffset());
+        LOGGER.info("   DateWithUTCtimeAsLocalTime: {}", createDateWithUTCtimeAsLocalTime());
+        LOGGER.info("");
+    }
+
+    private Date createDateWithUTCtimeAsLocalTime() {
+        final TimeZone tz = TimeZone.getDefault();
+        final long currentMillis = new Date().getTime();
+        final int currentOffsetMillis = tz.getOffset(currentMillis);
+        return new Date(currentMillis - currentOffsetMillis);
     }
 
 }
