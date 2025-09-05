@@ -118,7 +118,7 @@ class VeryBasicTest {
 
         final TimeZone tz = TimeZone.getDefault();
         assertNotEquals("Coordinated Universal Time", tz.getDisplayName());
-        
+
         LOGGER.info("Current default TimeZone (tz): {}", tz.getDisplayName());
         LOGGER.info("               tz.getOffset(): {}", tz.getOffset(new Date().getTime()));
         LOGGER.info("            tz.getRawOffset(): {}", tz.getRawOffset());
